@@ -1,0 +1,20 @@
+
+{
+
+    "dfleury2/beauty" : {
+      "@" : "1.0.0",
+      "u" : true,
+      "opts" : "set(CONAN OFF)",
+      "requires" : {
+
+        "boostorg/boost" : { "@" : "boost-1.80.0",
+            "opts": "set(BOOST_INCLUDE_LIBRARIES system asio beast)",
+            "packages": [ "boost_system", "boost_asio", "boost_beast" ],
+            "targets": [ "Boost::system", "Boost::asio", "Boost::beast" ],
+            "u": true
+        }
+
+        }
+    }
+
+}
