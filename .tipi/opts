@@ -1,2 +1,4 @@
+# This hack is required because we provide Boost via CMake Pacakge Config support and it 
+# doesn't ship an actual Boost::boost that is required by the way dfleury2/beauty searches for Boost.
 find_package( boost_system CONFIG )
 add_library( Boost::boost ALIAS Boost::system)
