@@ -1,0 +1,2 @@
+find_package( boost_system CONFIG )
+add_library( Boost::boost ALIAS Boost::system)
